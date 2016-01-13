@@ -1,0 +1,27 @@
+<?php
+$comment_item = <<<EOD
+     <div style="border-bottom:1px dashed #a6a6a6;">
+      <div class="listcomment">
+       <div class="top">
+        <span class="left"
+         ><a href="user.php?uid={$comment['uid']}">{$comment['username']}</a></span>
+        <span class="center">[{$comment['ip']}]</span>
+        <span class="right"></span>
+       </div>{$replies}
+       <div class="currentcomment">
+        <span>{$comment['comment']}</span>
+       </div>
+       <div class="bottom">
+        <span class="left">{$comment['posttime']}</span>
+        <span class="right">
+         <a href="">支持({$comment['ding']})</a>
+         <a href="javascript:void;" onclick="creatCommentForm({$comment['commentid']}, {$comment['aid']}, {$hascomment}, this)">回复</a>
+         <a href="">收藏</a>
+         <a href="">分享</a>
+        </span>
+       </div>
+       <div style="clear:both;"></div>
+      </div>
+     </div>
+EOD;
+?>

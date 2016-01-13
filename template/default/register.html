@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta ></meta>
+<link rel="stylesheet" href="css/style_.css" type="text/css"/>
+<script href=""></script>
+</head>
+<body>
+<div id="body">
+<!--页眉开始-->
+<header id="header">
+ <div id="logo"></div>
+ <div id="banner"></div>
+ <div id="topnav"></div>
+</header>
+<!--页眉结束-->
+
+<nav id="nav">
+ <div  id="topmenu">
+  <ul>
+   <li><a href="#">首页</a></li>
+   <li class="current"><a href="#">测试</a></li>
+   <li><a href="#">测试</a></li>
+   <li><a href="#">测试</a></li>
+   <li><a href="#">测试</a></li>
+  </ul>
+ </div>
+ <div id="top-panel">
+  <ul>
+   <li><a href="#">测试</a></li>
+   <li><a href="#">#</a></li>
+  </ul>
+ </div>
+</nav>
+<nav id="sitepath">
+ <div class="sitepath">
+  <ul>
+   <li><a href="#">首页</a></li>
+   <li><a href="#">测试</a></li>
+  </ul>
+ </div>
+ <div class="search">
+  <form id="search_" name="search_" action="search.php" method="post">
+   <input name="keywords" type="text" />&nbsp;
+   <select name="stype">
+    <option value="2">作者</option>
+    <option value="1" selected>标题</option>
+    <option value="3">内容</option>
+   </select>&nbsp;
+   <input name="submit" type="submit" value="搜索">
+  </form>  
+ </div>
+</nav>
+<!--页面主体-->
+<div id="container">
+ <div id="main">
+                    <form id="form" action="register.php?action=register" method="post">
+                      <fieldset id="personal">
+                        <legend>(*)以下选项为必填选项,请认真填写</legend>
+                        <label for="username">用户名 : </label> 
+                        <input name="username" id="username" type="text" tabindex="1" />
+                        <br />
+                        <label for="pass">密码 : </label>
+                        <input name="pass" id="pass" type="password" 
+                        tabindex="2" />
+                        <br />
+                        <label for="pass-2">密码 : </label>
+                        <input name="pass-2" id="pass-2" type="password" 
+                        tabindex="2" />
+                        <br />
+                        <label for="email">邮箱 : </label>
+                        <input name="email" id="email" type="text" 
+                        tabindex="2" />
+                        <br />
+                      </fieldset>
+                      <div align="center">
+                      <input id="submit" type="submit" value="注册"/> 
+                      <input id="reset" type="reset" value="重置"/>
+                      </div>
+                    </form>
+ </div>
+</div>
+<!--页面主体-->
+
+<!--页脚开始-->
+<footer id="footer">
+</footer>
+<!--页脚结束-->
+</div>
+</body>
+</html>

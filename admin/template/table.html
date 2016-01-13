@@ -1,0 +1,55 @@
+<?php
+$page_body = <<<EOD
+  <div id="wrapper">
+   <h3 class="title">栏目管理</h3>
+   <div id="box">
+    <table width="100%">
+     <thead>
+      <tr>
+       <!--th><input name="" id="checkall" type="checkbox"/></th-->
+       <th><a href="#">名称</a></th>
+       <th width="100px"><a href="#">描述</a></th>
+       <th class="c_center"><a href="#">操作</a></th>
+      </tr>
+     </thead>
+     <tbody>{$classes}</tbody>
+    </table>
+   </div>
+   <div id="pager">
+    Page <a href="#"><img src="img/icons/arrow_left.gif" width="16" height="16" /></a> 
+    <input size="1" value="1" type="text" name="page" id="page" /> 
+    <a href="#"><img src="img/icons/arrow_right.gif" width="16" height="16" /></a>of 42
+    pages | View 
+    <select name="view">
+     <option>10</option>
+     <option>20</option>
+     <option>50</option>
+     <option>100</option>
+    </select> 
+    per page | Total <strong>420</strong> records found
+   </div>
+  </div>
+  <div id="rightnow">
+   <h3 class="reallynow">
+   <span>添加新栏目</span>
+   </h3>
+   <div>
+    <form id="form" action="manage_category.php?action=add" method="post">
+     <label for="name">名称 : </label> 
+     <input name="name" id="name" type="text" tabindex="1" /><br/>
+     <label for="alias">别名 : </label> 
+     <input name="alias" id="alias" type="text" tabindex="2" /><br/>{$class_dir}
+     <label for="parent">父级 : </label>
+     <select id="parent" name="parent">{$options}</select><br/>
+     <label for="attr">属性 : </label> 
+     <input name="attr" id="attr" type="radio" value="1" /> 是
+     <input name="attr" id="attr" type="radio" value="0" checked/> 否<br/>
+     <label for="describtion">描述 : </label>
+     <textarea name="describtion" id="describtion"></textarea><br/>
+     <label for="button"></label> 
+     <input name="button" id="button" type="submit" tabindex="5" value="添加新栏目"/><br/>
+    </form>
+   </div>
+  </div>
+EOD;
+?>

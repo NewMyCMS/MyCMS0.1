@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Users - Admin Template</title>
+<link rel="stylesheet" type="text/css" href="css/theme.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script>
+   var StyleFile = "theme" + document.cookie.charAt(6) + ".css";
+   document.writeln('<link rel="stylesheet" type="text/css" href="css/' + StyleFile + '">');
+</script>
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="css/ie-sucks.css" />
+<![endif]-->
+</head>
+
+<body>
+	<div id="container">
+    	<div id="header">
+    <div id="site">
+			<!-- Title/Logo - can use text instead of image -->
+			<div id="logo"><img SRC="img/logo.gif" alt="Administry" /><!--<span>Administry</span> demo--></div>
+			<!-- Top navigation -->
+			<div id="topnav">
+				<a href="#"><img class="avatar" SRC="img/icons/user.png" alt="" /></a>
+				Logged in as <b>Admin</b>
+				<span>|</span> <a href="#">Settings</a>
+				<span>|</span> <a href="#">Logout</a><br />
+				<small>You have <a href="#" class="high"><b>1</b> new message!</a></small>
+			</div>
+			<!-- End of Top navigation --></div>
+    <div id="topmenu">
+            	<ul>
+                	<li><a href="index.html">Dashboard</a></li>
+                	<li class="current"><a href="#">Users</a></li>
+              </ul>
+          </div>
+      </div>
+        <div id="top-panel">
+            <div id="panel">
+                <ul>
+					<li><a href="#adduser" class="useradd">Add user</a></li>
+                    <li><a href="#" class="group">User groups</a></li>
+            		<li><a href="#" class="search">Find user</a></li>
+                    <li><a href="#" class="online">Users online</a></li>
+                </ul>
+            </div>
+      </div>
+        <div class="wrapper">
+        <div id="wrapper_container">
+         <div>测试〉</div>
+      </div>         
+      </div>
+      
+        <div class="wrapper">
+        <div id="footer">
+        <div id="credits">
+   		Template by <a href="http://www.bloganje.com">Bloganje</a>
+        </div>
+        <div id="styleswitcher">
+            <ul>
+                <li><a href="javascript: document.cookie='theme='; window.location.reload();" title="Default" id="defswitch">d</a></li>
+                <li><a href="javascript: document.cookie='theme=1'; window.location.reload();" title="Blue" id="blueswitch">b</a></li>
+                <li><a href="javascript: document.cookie='theme=2'; window.location.reload();" title="Green" id="greenswitch">g</a></li>
+                <li><a href="javascript: document.cookie='theme=3'; window.location.reload();" title="Brown" id="brownswitch">b</a></li>
+                <li><a href="javascript: document.cookie='theme=4'; window.location.reload();" title="Mix" id="mixswitch">m</a></li>
+            </ul>
+        </div><br />
+
+        </div></div>
+</div>
+</body>
+</html>

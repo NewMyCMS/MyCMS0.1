@@ -1,0 +1,19 @@
+<?php
+$ = <<<EOD
+      <div class="form">
+       <form name="comment-from" action="comment.php" method="post">
+        <div>
+         <input name="pid" type="hidden" value="{$comment['commentid']}">
+         <input name="aid" type="hidden" value="{$comment['aid']}">
+         <input name="hascomment" type="hidden" value="{$hascomment}">
+         <textarea id="editor" name="comment_content"></textarea>
+        </div>
+        <div style="height:20px;padding:5px 5px 0 5px;">{$comment_login_html}
+         <span class="fright">
+          <input type="submit" value="发表">
+         </span>
+        </div>
+       </form>
+      </div>
+EOD;
+?>

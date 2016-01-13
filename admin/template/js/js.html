@@ -1,0 +1,16 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+function test(){
+window.onbeforeunload=function(){
+return '测试';
+};
+}
+</script>
+</head>
+<body onload="test()">
+<input type="url" value="">
+<textarea id"t" value="测试"></textarea>
+</body>
+</html>

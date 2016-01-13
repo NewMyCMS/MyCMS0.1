@@ -1,0 +1,26 @@
+<?php
+$class_form = <<<EOD
+  <div id="rightnow">
+   <h3 class="reallynow">
+   <span>编辑栏目</span>
+   </h3>
+   <div>
+    <form id="form" action="manage_category.php?action=modify&cid={$cid}" method="post">
+     <label for="name">名称 : </label> 
+     <input name="name" id="name" type="text" tabindex="1" value="{$class['classname']}" /><br/>
+     <label for="alias">别名 : </label> 
+     <input name="alias" id="alias" type="text" tabindex="2" value="{$class['alias']}" /><br/>{$class_dir}
+     <label for="parent">父级 : </label>
+     <select name="parent">{$options}</select><br/>
+     <label for="attr">属性 : </label> 
+     <input name="attr" id="attr" type="radio" value="1" {$yes}/> 是
+     <input name="attr" id="attr" type="radio" value="0" {$not}/> 否<br/>
+     <label for="describtion">描述 : </label>
+     <textarea name="describtion" id="describtion">{$class['describtion']}</textarea><br/>
+     <label for="button"></label> 
+     <input name="button" id="button" type="submit" tabindex="5" value="修改栏目"/><br/>
+    </form>
+   </div>
+  </div>
+EOD;
+?>

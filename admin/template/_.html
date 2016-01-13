@@ -1,0 +1,165 @@
+<?php
+$page = <<<EOD<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Users - Admin Template</title>
+<link rel="stylesheet" type="text/css" href="css/theme.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script>
+   var StyleFile = "theme" + document.cookie.charAt(6) + ".css";
+   document.writeln('<link rel="stylesheet" type="text/css" href="css/' + StyleFile + '">');
+</script>
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="css/ie-sucks.css" />
+<![endif]-->
+</head>
+
+<body>
+ <div id="container">
+     <div id="header">
+    <div id="site">
+   <!-- Title/Logo - can use text instead of image -->
+   <div id="logo"><img SRC="img/logo.gif" alt="Administry" /><!--<span>Administry</span> demo--></div>
+   <!-- Top navigation -->
+   <div id="topnav">
+    <a href="#"><img class="avatar" SRC="img/icons/user.png" alt="" /></a>
+    Logged in as <b>Admin</b>
+    <span>|</span> <a href="#">Settings</a>
+    <span>|</span> <a href="#">Logout</a><br />
+    <small>You have <a href="#" class="high"><b>1</b> new message!</a></small>
+   </div>
+   <!-- End of Top navigation --></div>
+    <div id="topmenu">
+             <ul>
+                 <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="#">Orders</a></li>
+                 <li class="current"><a href="#">Users</a></li>
+                    <li><a href="#">Manage</a></li>
+                    <li><a href="#">CMS</a></li>
+                    <li><a href="#">Statistics</a></li>
+                    <li><a href="#">Settings</a></li>
+              </ul>
+          </div>
+      </div>
+        <div id="top-panel">
+            <div id="panel">
+                <ul>
+     <li><a href="#adduser" class="useradd">Add user</a></li>
+                    <li><a href="#" class="group">User groups</a></li>
+              <li><a href="#" class="search">Find user</a></li>
+                    <li><a href="#" class="online">Users online</a></li>
+                </ul>
+            </div>
+      </div>
+        <div id="wrapper">
+            <div id="wrapper_content">
+            <div id="content">
+                <div id="box">
+                 <h3>Users</h3>
+                 <table width="100%">
+      <thead>
+       <tr>
+       <th><a href="#">名称</a></th>
+       <th width="100px"><a href="#">描述</a></th>
+       <th width="100px"><a href="#">操作</a></th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+                             <td class="">|-232</td>
+                             <td class="">232</td>
+                             <td class="a-center"><a href="#">发布</a> | <a href="#">修改</a> | <a href="#">删除</a></td>
+       </tr>
+       <tr>
+                             <td class="">&nbsp;&nbsp;&nbsp;|-232</td>
+                             <td class="">232</td>
+                             <td class="a-center"><a href="#">发布</a> | <a href="#">修改</a> | <a href="#">删除</a></td>
+       </tr>
+       <tr>
+                             <td class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-232</td>
+                             <td class="">232</td>
+                             <td class="a-center"><a href="#">发布</a> | <a href="#">修改</a> | <a href="#">删除</a></td>
+       </tr>
+       <tr>
+                             <td class="">&nbsp;&nbsp;&nbsp;|-232</td>
+                             <td class="">232</td>
+                             <td class="a-center"><a href="#">发布</a> | <a href="#">修改</a> | <a href="#">删除</a></td>
+       </tr>
+       <tr>
+                             <td class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-232</td>
+                             <td class="">232</td>
+                             <td class="a-center"><a href="#">发布</a> | <a href="#">修改</a> | <a href="#">删除</a></td>
+       </tr>
+      </tbody>
+     </table>
+                    <div id="pager">
+                     Page <a href="#"><img src="img/icons/arrow_left.gif" width="16" height="16" /></a> 
+                     <input size="1" value="1" type="text" name="page" id="page" /> 
+                     <a href="#"><img src="img/icons/arrow_right.gif" width="16" height="16" /></a>of 42
+                    pages | View <select name="view">
+                        <option>10</option>
+                                    <option>20</option>
+                                    <option>50</option>
+                                    <option>100</option>
+                       </select> 
+                    per page | Total <strong>420</strong> records found
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="sidebar">
+      <ul>
+                 <li><h3><a href="#" class="house">Dashboard</a></h3>
+                        <ul>
+                         <li><a href="#" class="report">Sales Report</a></li>
+                      <li><a href="#" class="report_seo">SEO Report</a></li>
+                            <li><a href="#" class="search">Search</a></li>
+                        </ul>
+                    </li>
+                    <li><h3><a href="#" class="folder_table">Orders</a></h3>
+              <ul>
+                         <li><a href="#" class="addorder">New order</a></li>
+                          <li><a href="#" class="shipping">Shipments</a></li>
+                            <li><a href="#" class="invoices">Invoices</a></li>
+                        </ul>
+                    </li>
+                    <li><h3><a href="#" class="manage">Manage</a></h3>
+              <ul>
+                            <li><a href="#" class="manage_page">Pages</a></li>
+                            <li><a href="#" class="cart">Products</a></li>
+                            <li><a href="#" class="folder">Product categories</a></li>
+                <li><a href="#" class="promotions">Promotions</a></li>
+                        </ul>
+                    </li>
+                  <li><h3><a href="#" class="user">Users</a></h3>
+              <ul>
+                            <li><a href="#" class="useradd">Add user</a></li>
+                            <li><a href="#" class="group">User groups</a></li>
+                <li><a href="#" class="search">Find user</a></li>
+                            <li><a href="#" class="online">Users online</a></li>
+                        </ul>
+                    </li>
+    </ul>       
+          </div>
+      </div>
+        <div id="footer">
+        <div id="credits">
+     Template by <a href="http://www.bloganje.com">Bloganje</a>
+        </div>
+        <div id="styleswitcher">
+            <ul>
+                <li><a href="javascript: document.cookie='theme='; window.location.reload();" title="Default" id="defswitch">d</a></li>
+                <li><a href="javascript: document.cookie='theme=1'; window.location.reload();" title="Blue" id="blueswitch">b</a></li>
+                <li><a href="javascript: document.cookie='theme=2'; window.location.reload();" title="Green" id="greenswitch">g</a></li>
+                <li><a href="javascript: document.cookie='theme=3'; window.location.reload();" title="Brown" id="brownswitch">b</a></li>
+                <li><a href="javascript: document.cookie='theme=4'; window.location.reload();" title="Mix" id="mixswitch">m</a></li>
+            </ul>
+        </div><br />
+
+        </div>
+</div>
+</body>
+</html>
+EOD;
+?>
